@@ -1,8 +1,16 @@
 # Rapid Fire Commander Wi-Fi
 
-[Download the printable Wi-Fi booklet (PDF)](Rapid-Fire-Commander-WiFi-Booklet.pdf). Print it in Booklet mode on one double-sided A4 sheet.
+[Download the printable Wi-Fi quick setup booklet (PDF)](Rapid-Fire-Commander-WiFi-Booklet.pdf). Print it in Booklet mode on one double-sided A4 sheet.
 
 Commander Wi-Fi connects TunerPro RT on a Windows laptop to OneROM through the Guition ESP32-P4 dashboard. The bench build targets the 4.3-inch Guition JC4880P443C_I_W/Y with 16 MB flash and ESP32-P4 silicon revisions 0.1 through 1.99.
+
+The dashboard also includes a FAT32 SD Tune Selector for up to 64 compatible BIN files, USB SD Card Access, and on-screen wideband display. The guides below cover the hardware and menus in more detail.
+
+- [Commander menu and feature guide](HELP.md) covers OneROM, SD tunes, settings and GT Pro logging, with screenshots and a Wi-Fi connection diagram.
+- [Windows flashing and recovery](WINDOWS.md) covers board identification, BOOT mode, backups and using the private Wi-Fi kit.
+- [Wideband wiring and setup](WIDEBAND.md) covers the Expand IO pinout and the Innovate LM-2 and AEM options.
+
+The Wi-Fi firmware and Windows kit are distributed privately. This repository contains the documentation and printable booklet.
 
 ## Connect the laptop
 
