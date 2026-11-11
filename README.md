@@ -1,2 +1,28 @@
-# rapid-fire-commander-wifi
-Setup guide and bench test results for Rapid Fire Commander Wi-Fi.
+# Rapid Fire Commander Wi-Fi
+
+Commander Wi-Fi connects TunerPro RT on a Windows laptop to OneROM through the Guition ESP32-P4 dashboard. The bench build targets the 4.3-inch Guition JC4880P443C_I_W/Y with 16 MB flash and ESP32-P4 silicon revisions 0.1 through 1.99.
+
+## Connect the laptop
+
+1. With the Wi-Fi build already installed, connect OneROM to the P4’s **USB2** port and power the P4 through **USB3**.
+2. On the P4, open **OneROM → TunerPro bridge** for emulation, or **OneROM → TunerPro + GT Pro** to include Holden ALDL logging. Wait for **OneROM ready on USB2**.
+3. In Windows, join the network shown on the P4’s **Commander Wi-Fi** screen using the password displayed there.
+4. Open the Commander Wi-Fi Windows app and select **Connect**.
+5. In TunerPro RT, select the COM port mapped to the OneROM endpoint. For logging, select the GT Pro under **Settings → OBDX devices** on the P4, choose the separate acquisition COM port in TunerPro RT, and load the ADX that matches the ECU and calibration.
+
+| TunerPro RT function | Local endpoint for the Windows COM mapping |
+| --- | --- |
+| OneROM emulation | `127.0.0.1:22170` |
+| GT Pro ALDL acquisition | `127.0.0.1:22171` |
+
+The Windows app presents these as local RFC 2217 endpoints. Use the COM numbers assigned by your Windows serial port provider in TunerPro RT. The Commander Wi-Fi app has no trial timer.
+
+## Bench results
+
+On the owner’s Windows laptop, Commander connected over Wi-Fi and TunerPro RT detected OneROM. The owner reported a successful BIN download and upload with no errors. The matching ADX loaded in TunerPro RT. Live GT Pro telemetry with an ECU connected remains to be verified on the Wi-Fi build.
+
+## Troubleshooting
+
+- **Peer disconnected** can occur when the P4 is waiting for OneROM. Check that OneROM is on **USB2** and wait for **OneROM ready on USB2** before selecting **Connect** in the app.
+- If a fresh session is needed, close TunerPro RT, disconnect the Windows app and restart the P4. Select the bridge mode again and reconnect the laptop to the dashboard’s Wi-Fi.
+- For the wired release and its printable handbook, see the [Commander README](https://github.com/RapidFire-001/rapid-fire-commander).
