@@ -2,7 +2,9 @@
 
 The shared menu illustrations come from the wired Commander documentation. Status values and filenames are examples. The connection diagram below shows the Wi-Fi bridge.
 
-![OneROM mode chooser with TunerPro Bridge, SD Tune Selector and SD Card Access](https://raw.githubusercontent.com/RapidFire-001/rapid-fire-commander/9301685c97d62d3846b26de1998b3985171d466e/onerom-modes.png)
+![OneROM mode chooser showing TunerPro bridge, SD tune selector, SD Card Access and TunerPro + GT Pro](images/onerom-modes-wifi.svg)
+
+*OneROM mode chooser in the Wi-Fi build, recreated from the firmware layout.*
 
 ## Program and verify OneROM in the Rapid Fire OneROM app
 
