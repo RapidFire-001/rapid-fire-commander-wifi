@@ -12,6 +12,8 @@ The dashboard also includes a FAT32 SD Tune Selector for up to 64 compatible BIN
 
 The Wi-Fi firmware and Windows kit are distributed privately. This repository contains the documentation and printable booklet.
 
+For a Delco 808 wired directly to OneROM, select **ALDL 808 DT** in the Rapid Fire OneROM app. If you use GT Pro for logging, select its separate acquisition COM port and the matching ADX in TunerPro RT. See the [Commander help guide](HELP.md) for setup.
+
 ## Connect the laptop
 
 1. With the Wi-Fi build already installed, connect OneROM to the P4’s **USB2** port and power the P4 through **USB3**.
