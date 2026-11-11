@@ -9,7 +9,7 @@ The shared menu illustrations come from the wired Commander documentation. Statu
 ## Program and verify OneROM in the Rapid Fire OneROM app
 
 1. Keep OneROM disconnected from the ECU. Connect it directly to your computer and open the Rapid Fire OneROM app.
-2. The Rapid Fire OneROM app automatically detects and selects your OneROM board and sets the intended ROM size. Select the **NORMAL DT** firmware profile, then program the tune BIN you want to start with.
+2. The Rapid Fire OneROM app automatically detects and selects your OneROM board and sets the intended ROM size. For a Delco 808 wired directly to OneROM, select **ALDL 808 DT** in the app. Then program your starting tune BIN. If you log through GT Pro, use its separate acquisition COM port and the matching ADX in TunerPro RT.
 3. Read the programmed ROM back in the app and confirm that it matches the intended BIN byte for byte. If you plan to use the SD Tune Selector, put a copy of that verified BIN at the root of the FAT32 microSD card.
 4. Once the readback matches, disconnect OneROM from the computer and plug it into Commander's **USB2** port. Open the Commander mode you want to use and confirm that it detects the expected board and ROM size.
 
@@ -59,7 +59,7 @@ The SD Tune Selector loads the selected BIN image in blocks. Even when two BINs 
 | Fire28A, Fire28C | 16, 32 or 64 KiB |
 | Fire32A, Fire32B | 128 KiB, 27C010 |
 
-Commander uses model and active-size metadata from OneROM. Use the matching OneROM v0.8.0 **NORMAL DT** firmware. Unsupported or unreadable profiles stop before a load.
+Commander uses model and active-size metadata from OneROM. Unsupported or unreadable profiles stop before a load. BIN transfers have been verified with **NORMAL DT**. Commander operation with **ALDL 808 DT** and end-to-end Display Trace in TunerPro RT still need verification.
 
 1. Copy the candidate BINs and a verified copy of the current BIN to the root of a FAT32 card. Use descriptive filenames.
 2. Choose **SD tune selector** and check the detected board and ROM size.
