@@ -36,3 +36,9 @@ On the owner’s Windows laptop, Commander connected over Wi-Fi and TunerPro RT 
 - **Peer disconnected** can occur when the P4 is waiting for OneROM. Check that OneROM is on **USB2** and wait for **OneROM ready on USB2** before selecting **Connect** in the app.
 - If a fresh session is needed, close TunerPro RT, disconnect the Windows app and restart the P4. Select the bridge mode again and reconnect the laptop to the dashboard’s Wi-Fi.
 - For the wired release and its printable handbook, see the [Commander README](https://github.com/RapidFire-001/rapid-fire-commander).
+
+## Copyright
+
+Copyright © 2026 Rapid Fire (RapidFire-001). All rights reserved in the original Rapid Fire Commander Wi-Fi firmware, Windows app, documentation and illustrations.
+
+The Wi-Fi firmware and Windows kit are distributed privately. For permission to redistribute Rapid Fire materials, contact [Rapid Fire Software](mailto:support@rapidfiresoftware.net). Third-party products and materials are credited in the relevant guides.
