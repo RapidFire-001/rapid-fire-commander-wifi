@@ -8,13 +8,13 @@ The shared menu illustrations come from the wired Commander documentation. Statu
 
 ## Program and verify OneROM in the Rapid Fire OneROM app
 
-1. Keep OneROM disconnected from the ECU. Connect it directly to your computer and open the Rapid Fire OneROM app.
-2. The Rapid Fire OneROM app automatically detects and selects your OneROM board and sets the intended ROM size. For a Delco 808 wired directly to OneROM, select **ALDL 808 DT** in the app. Then program your starting tune BIN. If you log through GT Pro, use its separate acquisition COM port and the matching ADX in TunerPro RT.
-
 | OneROM firmware mode | Use |
 | --- | --- |
 | **NORMAL DT** | Honda standard Ostrich with Display Trace. The optional UART runs at 38,400 baud. |
 | **ALDL 808 DT** | Delco 808 wired directly to OneROM for ALDL at 8,192 baud, with default signal polarity. |
+
+1. Keep OneROM disconnected from the ECU. Connect it directly to your computer and open the Rapid Fire OneROM app.
+2. The Rapid Fire OneROM app automatically detects and selects your OneROM board and sets the intended ROM size. For a Delco 808 wired directly to OneROM, select **ALDL 808 DT** in the app. Then program your starting tune BIN. If you log through GT Pro, use its separate acquisition COM port and the matching ADX in TunerPro RT.
 3. Read the programmed ROM back in the app and confirm that it matches the intended BIN byte for byte. If you plan to use the SD Tune Selector, put a copy of that verified BIN at the root of the FAT32 microSD card.
 4. Once the readback matches, disconnect OneROM from the computer and plug it into Commander's **USB2** port. Open the Commander mode you want to use and confirm that it detects the expected board and ROM size.
 
