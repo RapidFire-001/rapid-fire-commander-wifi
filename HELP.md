@@ -72,9 +72,9 @@ Commander uses model and active-size metadata from OneROM. Unsupported or unread
 4. Select a compatible file and confirm the load. Commander checks the existing image against the card and validates the expected ROM layout before writing. For 32, 64 and 128 KiB images, identical halves fail this check.
 5. Wait for **Verified byte for byte**. If a write is incomplete or verification fails, keep the engine off and restore and verify the original BIN before starting it using your OneROM recovery procedure.
 
-![Fire28C SD Tune Selector ready to browse](https://raw.githubusercontent.com/RapidFire-001/rapid-fire-commander/9301685c97d62d3846b26de1998b3985171d466e/tune-selector.png)
+![Fire28C SD Tune Selector ready to browse](tune-selector.png)
 
-![Example SD BIN list with a disabled size mismatch](https://raw.githubusercontent.com/RapidFire-001/rapid-fire-commander/9301685c97d62d3846b26de1998b3985171d466e/tune-list.png)
+![Example SD BIN list with a disabled size mismatch](tune-list.png)
 
 Tap **Retry USB2** if the selector loses the device. The P4 can restart its USB2 host and the OneROM session while the cable stays in place. A retry does not replay a write. For **Change mode**, finish transfers, close TunerPro, turn the engine off and confirm the restart. A restart can discard unsaved tune changes.
 
@@ -82,16 +82,21 @@ Tap **Retry USB2** if the selector loses the device. The P4 can restart its USB2
 
 Choose **SD Card Access** and connect Windows to USB3. Copy files to the card in File Explorer. Eject the drive in Windows and wait for the P4 to show that the card was released. Tap **Return** and select the next mode after the restart. You can also copy files with a separate card reader.
 
-![SD Card Access with Windows eject instructions](https://raw.githubusercontent.com/RapidFire-001/rapid-fire-commander/9301685c97d62d3846b26de1998b3985171d466e/sd-card-access.png)
+![SD Card Access with Windows eject instructions](sd-card-access.png)
 
 ## Dashboard, Engine and Settings
 
-- **Dashboard** and **Engine** show speed, RPM, intake air, coolant, spark advance and battery fields. Unavailable readings display dashes.
+![Instrument Cluster in Demo mode](dashboard.png)
+
+- **Dashboard** shows RPM, boost, MAP, speed, gear, spark advance, knock retard, commanded AFR, wideband AFR, injector pulse width, coolant, intake and transmission temperatures, and battery voltage. Unavailable readings display dashes. A supported external wideband can feed the wideband display directly.
+- **Engine → Auto** uses the family detected after a verified SD tune load. Choose **11P** or **12P** to review the corresponding channels manually. Select the exact ADX and MAP range in TunerPro RT. The Engine selector does not decode an ADX or supply missing live readings.
+
+![Engine family selector](engine.png)
 - **Settings → Brightness** adjusts the backlight from 10% to 100% and saves on release.
 - **Settings → Demo mode** supplies simulated gauge values, marked by a **DEMO** badge. It starts off after a restart.
 - **Settings → OBDX devices** opens Bluetooth discovery, connection controls and diagnostics. Use **TunerPro + GT Pro** to log ECU data in TunerPro RT.
 - **Wideband → Source** chooses Innovate LM-2 or AEM 30-0300. See [wideband setup](WIDEBAND.md) for wiring and signal levels. Use one source at a time.
 
-![Settings with Demo mode and brightness](https://raw.githubusercontent.com/RapidFire-001/rapid-fire-commander/9301685c97d62d3846b26de1998b3985171d466e/settings.png)
+![Settings with Demo mode and brightness](settings.png)
 
-![Rapid Fire Commander startup logo fade](https://raw.githubusercontent.com/RapidFire-001/rapid-fire-commander/9301685c97d62d3846b26de1998b3985171d466e/startup.gif)
+![Rapid Fire Commander startup logo fade](startup.gif)

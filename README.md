@@ -1,13 +1,13 @@
 # Rapid Fire Commander Wi-Fi
 
-[Download the complete printable Wi-Fi handbook (PDF)](Rapid-Fire-Commander-WiFi-Booklet.pdf). Print the 16 A5 pages in Booklet mode on double-sided A4 with left binding.
+[Download the complete printable Wi-Fi handbook (PDF)](Rapid-Fire-Commander-WiFi-Booklet.pdf). Print the A5 pages in Booklet mode on double-sided A4 with left binding.
 
-Commander Wi-Fi connects TunerPro RT on a Windows laptop to OneROM through the Guition ESP32-P4 dashboard. The bench build targets the 4.3-inch Guition JC4880P443C_I_W/Y with 16 MB flash and ESP32-P4 silicon revisions 0.1 through 1.99.
+Commander Wi-Fi connects TunerPro RT on a Windows laptop to OneROM through the Guition ESP32-P4 dashboard. The Wi-Fi edition targets the 4.3-inch Guition JC4880P443C_I_W/Y with 16 MB flash and ESP32-P4 silicon revisions 0.1 through 1.99.
 
 The dashboard also includes a FAT32 SD Tune Selector for up to 64 compatible BIN files, USB SD Card Access, and on-screen wideband display. The guides below cover the hardware and menus in more detail.
 
 - [Commander menu and feature guide](HELP.md) covers OneROM, SD tunes, settings and GT Pro logging, with screenshots and a Wi-Fi connection diagram.
-- [Windows flashing and recovery](WINDOWS.md) covers board identification, BOOT mode, backups and using the private Wi-Fi kit.
+- [Windows flashing and recovery](WINDOWS.md) covers board identification, BOOT mode, backups and using Espressif Flash Download Tool with the Wi-Fi kit.
 - [Wideband wiring and setup](WIDEBAND.md) covers the Expand IO pinout and the Innovate LM-2 and AEM options.
 
 The Wi-Fi firmware and Windows kit are distributed privately. This repository contains the documentation and printable booklet.
@@ -18,6 +18,12 @@ For a Delco 808 wired directly to OneROM, select **ALDL 808 DT** in the Rapid Fi
 | --- | --- |
 | **NORMAL DT** | Honda standard Ostrich with Display Trace. The optional UART runs at 38,400 baud. |
 | **ALDL 808 DT** | Delco 808 wired directly to OneROM for ALDL at 8,192 baud, with default signal polarity. |
+
+## Dashboard and Engine
+
+![Instrument Cluster in Demo mode](dashboard.png)
+
+Open **Settings → Demo mode** to preview all gauges. Live mode starts by default. The Engine tab offers **Auto**, **11P** and **12P**. Auto follows a supported tune family after verified SD load. Select the exact ADX and MAP range in TunerPro RT.
 
 ## Connect the laptop
 

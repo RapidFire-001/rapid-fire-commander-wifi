@@ -2,6 +2,8 @@
 
 Commander receives a digital wideband signal on **P4 UART2 RX, GPIO32**. Use one supported source at a time. The screen shows AFR and lambda when valid data arrives.
 
+Both editions use the same P4 serial input. Turn Demo mode off before checking an actual sensor reading.
+
 ## Find the wideband input on the display board
 
 On the Guition **JC4880P443C_I_W** schematic, **JP1** is the 2×13 header labeled **Expand IO**. Look for **GPIO32** at JP1 pin 19 and **GND** at pin 5. The schematic shows pin 20 beside pin 19 as **C6_U0RXD**. That pin belongs to the ESP32-C6. The separate RS-485 connector uses different signals. Match the board model and pin-1 orientation to the drawing before wiring. [Guition Expand IO schematic](https://github.com/ultramcu/guition-jc4880p443c-i-w/blob/master/schematic/03-expand-io_usb-fs-hs_lcd-backlight.webp)
